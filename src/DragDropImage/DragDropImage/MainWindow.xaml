@@ -1,0 +1,23 @@
+﻿<Window x:Class="DragDropImage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DragDropImage"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="300"
+        AllowDrop="True"
+        WindowStyle="SingleBorderWindow"
+        ResizeMode="CanMinimize"
+        Drop="Grid_Drop">
+    <Grid AllowDrop="True"
+          MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+        <TextBlock VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontSize="20"
+                   TextWrapping="Wrap"
+                   TextAlignment="Center"
+                   FontWeight="Bold"
+                   Text="Перетяните сюда изображение которое нужно вывести в отдельое окно"/>
+    </Grid>
+</Window>
